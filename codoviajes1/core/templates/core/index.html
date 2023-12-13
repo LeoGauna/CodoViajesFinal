@@ -1,0 +1,105 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+<main id="main_index">
+  <article id="h1_index">
+  <h1>Bienvenido a Codo Viajes</h1>
+  </article>
+
+  <!-- COMIENZO RESUMEN SOBRE NOSOTROS -->
+
+  <article class="article_index" id="article_aboutus">
+    <div id="aboutus_h2_container">
+      <h2>Sobre nosotros</h2>
+    </div>
+    <div id="aboutus_p_container">
+      <p>Somos una empresa de viajes y turismo que brinda un servicio personalizado, adaptandose a tus preferencias y presupuesto. Acompañandote desde la planificación hasta
+      el regreso. Haz <a id="link_index" href="{% url 'nosotros' %}">click aquí</a> para conocer más sobre nuestros valores.
+      </p>
+    </div>
+  </article>
+  <!-- FIN RESUMEN SOBRE NOSOTROS -->
+
+  <!-- INICIO RESUMEN PACK DISNEY -->
+  
+  <article class="article_index" id="article_disney">
+  <div id="disney_p_container">
+    <p>Si tu viaje ideal es recorrer parques de diversiones para disfrutar en familia o revivir tu infancia, este viaje es el indicado. Haz <a id="link_index" href="{% url 'disney' %}">click aquí</a> para conocer más sobre este pack.
+    </p>
+  </div>
+  <div id="disney_h2_container">
+    <h2>Viaja a Disney</h2>
+  </div>
+  </article>
+  <!-- FIN RESUMEN PACK DISNEY -->
+
+  <!-- INICIO RESUMEN PACK EUROPA -->
+  <article class="article_index" id="article_europa">
+    <div id="europa_h2_container">
+      <h2>Viaja a Europa</h2>
+    </div>
+    <div id="europa_p_container">
+      <p>Si queres recorrer el viejo contienente y conocer sobre su cultura e historia, este viaje es el indicado. Haz <a id="link_index" href="{% url 'europa' %}">click aquí</a> para conocer más sobre este pack.
+    </p>
+    </div>
+  </article>
+  <!-- FIN RESUMEN PACK EUROPA -->
+  
+  <!-- RESEÑAS -->
+  <article class="carousel-container">
+    <h2 class="reseñas_titulo"> NUESTROS CLIENTES SATISFECHOS</h2>
+    <div class="carousel-slide">
+        <div class="comment">
+            <p>Comentario</p>
+        </div>
+    </div>
+  </article>
+  <div class="buttons-container">
+    <button id="prevBtn" onclick="changeSlide(-1)">Anterior</button>
+    <button id="nextBtn" onclick="changeSlide(1)">Siguiente</button>
+  </div>
+  <!-- FIN RESEÑAS -->
+
+  <!-- FORMULARIO -->
+  <article id="index_form">
+    <h2 class="h2_form">Contáctanos y reserva tu paquete</h2>
+    <form class="form_index" onsubmit="return validarFormulario()" action="#">
+        <fieldset class="form_info_personal">
+            <legend>Información Personal</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <div id="nombre-error" class="error-message">El nombre debe contener al menos 3 caracteres.<br>No puede contener caracteres especiales o números</div>
+            <br>
+
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+            <div id="correo-error" class="error-message">Ingrese un correo electrónico válido.</div>
+            <br>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono">
+        </fieldset>
+
+        <fieldset class="form_destino">
+            <legend>Destino</legend>
+            <label for="destino">Selecciona un destino:</label>
+            <select id="destino" name="destino">
+                <option value="destino1">Disney</option>
+                <option value="destino2">Europa</option>
+            </select>
+        </fieldset>
+
+        <fieldset class="form_mensaje">
+            <legend>Mensaje</legend>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuentanos en qué podemos ayudarte..." required></textarea>
+        </fieldset>
+        <br>
+
+        <div id="btn_form_container"><input type="submit" value="Enviar" class="form_boton_enviar"></div>
+    </form>
+  </article> 
+  <!-- FIN FORMULARIO -->
+</main>
+
+{% endblock content %}

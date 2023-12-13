@@ -1,0 +1,168 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+{% for disney in disneys %}
+<div class="banner-promo">
+  <div class="img-banner-promo">
+      <img src="{{disney.imagen.url}}" alt="">
+  </div>
+  <div class="contenido-banner-promo">
+      <h1 class="titulo-banner-promo">{{disney.titulo}}</h1>
+      <p class="parrafo-banner-promo">{{disney.descripcion}}</p>
+  </div>
+</div>
+
+{% endfor %}
+    <main id="main_index">
+      <article id="h1_disney">
+        <h1>Visita Disney</h1>
+      </article>
+      <h2 id="h2_parques"> Disfruta de los maravillos parques de Disney World Orlando</h2>
+  
+      <!-- INICIO DE PARQUE -->
+  
+      <article class="article" id="article_disney">
+  
+  
+        <!-- PARQUE GENERAl -->
+  
+        <div id="paquete_container">
+          <div id="paquete_img_container">
+            <h2>Paquete de viaje</h2>
+          </div>
+  
+          <div id="paquete_txt_container">
+            <ol class="ol_disney" id="ol_paquete">
+              <li>- Viaje de 15 dias y 14 noches</li>
+              <li>- Vuelo ida y vuelta directo Buenos Aires - Orlando en clase económica.</li>
+              <li>- Traslado al Hotel a su llegada y al aeropuerto a su partida en transfer privado.</li>
+              <li>- Hospedaje en <a id="link_hotel"
+                  href="https://disneyworld.disney.go.com/es-ar/resorts/all-star-music-resort/">Hotel disney's All Star
+                  Music Resort.</a></li>
+              <li>- Entradas a los parques con park to park y plan de comidas.</li>
+              <li>- Seguro asistencial: cobertura médica por U$S 500.000 durante todo el viaje.</li>
+              <li>- SHOPPING TOUR por Premium Outlets, outlet de primeras marcas más grande de La Florida (Forever 21,
+                Victoria´s Secret, Pink, Levis, Vans, Adidas, Nike, y Converse entre otras) con las mejores promociones de
+                descuentos.
+            </ol>
+          </div>
+        </div>
+  
+        <!-- MAGICKINGDOM -->
+  
+        <div id="magic_container">
+          <div id="magic_img_container">
+            <h2>Magic Kingdom</h2>
+          </div>
+  
+          <div id="magic_txt_container">
+            <ol class="ol_disney" id="ol_magic">
+              <li>Principales atracciones:</li>
+              <li>-Cinderella Castle: el símbolo de Magic Kingdom.</li>
+              <li>-Space Mountain.</li>
+              <li>-Splash Mountain.</li>
+              <li>-Haunted Mansion.</li>
+              <li>-It's a Small World.</li>
+              <li>-Seven Dwarfs Mine Train.</li>
+            </ol>
+          </div>
+        </div>
+  
+        <!-- HOLLYWOOD STUDIO -->
+  
+        <div id="hollywood_container">
+          <div id="hollywood_img_container">
+            <h2>Hollywood Studio</h2>
+          </div>
+  
+          <div id="hollywood_txt_container">
+            <ol class="ol_disney" id="ol_hollywood">
+              <li>Principales atracciones</li>
+              <li>-The Twilight Zone Tower of Terror.</li>
+              <li>-Rock 'n' Roller Coaster Starring Aerosmith.</li>
+              <li>-Star Wars, Rise of the Resistance.</li>
+              <li>-Toy Story Mania.</li>
+              <li>-Millennium Falcon, Smugglers Run: Un paseo en el Halcón Milenario en el que los visitantes pueden
+                asumir diferentes roles en una misión espacial de Star Wars.</li>
+              <li>-Slinky Dog Dash.</li>
+              <li>-Mickey & Minnie's Runaway Railway.</li>
+              <li>-The Muppet*Vision 3D.</li>
+          </div>
+        </div>
+  
+        <!-- EPCOT -->
+  
+        <div id="epcot_container">
+          <div id="epcot_img_container">
+            <h2> Epcop</h2>
+          </div>
+  
+          <div id="epcot_txt_container">
+            <ol class="ol_disney" id="ol_epcot">
+              <li>Principales atracciones</li>
+              <li>-Spaceship Earth.</li>
+              <li>-Soarin' Around the World.</li>
+              <li>-Frozen Ever After.</li>
+              <li>-Spaceship Earth.</li>
+              <li>-Restaurantes temáticos que representan a diferentes países.</li>
+              <li>-Impressions de France.</li>
+            </ol>
+          </div>
+        </div>
+  
+        <!-- ANIMAL KINGDOM -->
+  
+        <div id="animal_container">
+          <div id="animal_img_container">
+            <h2>Animal Kingdom</h2>
+          </div>
+  
+          <div id="animal_txt_container">
+            <ol class="ol_disney" id="ol_animal">
+              <li>Principales atracciones</li>
+              <li>Avatar Flight of Passage. lore</li>
+              <li>Expedition Everest.</li>
+              <li>Kilimanjaro Safaris.</li>
+              <li>Na'vi River Journey.</li>
+              <li>Festival of the Lion King.</li>
+              <li>It's Tough to Be a Bug!.</li>
+              <li>Kali River Rapids.</li>
+            </ol>
+          </div>
+        </div>
+  
+        <!-- DISNEY SPRING -->
+  
+        <div id="spring_container">
+          <div id="spring_img_container">
+            <h2>Disney Spring</h2>
+          </div>
+  
+          <div id="spring_txt_container">
+            <ol class="ol_disney" id="ol_spring">
+              <li>Principales atracciones</li>
+              <li>The VOID.</li>
+              <li>AMC Disney Springs 24 Dine-In Theatresdas.</li>
+              <li>Cirque du Soleil - Drawn to Life.</li>
+              <li>Characters in Flight.</li>
+              <li>The Edison.</li>
+              <li>World of Disney.</li>
+              <li>The Boathouse.</li>
+              <li>T-Rex Cafe.</li>
+            </ol>
+          </div>
+        </div>
+        </article>
+  
+  
+        <!-- MAPA DEL DISNEY -->
+        <article id="map_disney">
+          <div id="h2_mapa">
+            <h2>Ubicación de los parques</h2>
+          </div>
+          <iframe src="https://www.google.com/maps/d/embed?mid=1FsoHLLVzEBAkTL2PWkdSvJ7Wl_3A8kM&ehbc=2E312F" width="640"
+            height="480"></iframe>
+        </article>
+    </main>
+  
+{% endblock content %}

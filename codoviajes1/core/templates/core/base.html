@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Codo Viajes | {% endblock %}Inicio</title>
+    <!-- ESTILOS PERSONALIZADOS -->
+    {% load static %}
+    <link rel="icon" href="{% static 'core/img/plane-departure-solid.svg' %}">
+    <link rel="stylesheet" href="{% static 'core/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/style_disney.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/style_europa.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/style_nosotros.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    {% comment %} COMIENZO BARRA DE NAVEGACION {% endcomment %}
+    <header>
+      <nav class="navbar">
+        <span class="codo-logo">
+          <a href="#">
+            <img src="{% static 'core/img/avion_nav.png' %} " alt="Logo de la compañia Codo Viajes" />
+          </a>
+        </span>
+        <span class="navbar-menu">
+          <ul>
+            <li><a href="{% url 'home' %}">Inicio</a></li>
+            <li><a href="{% url 'disney' %}">Disney</a></li>
+            <li><a href="{% url 'europa' %}">Europa</a></li>
+            <li><a href="{% url 'nosotros' %}">Nosotros</a></li>
+          </ul>
+        </span>
+      </nav>
+      <!-- FIN BARRA DE NAVEGACION -->
+    </header>
+{% comment %} contenido {% endcomment %}
+{% block content %} {% endblock %}
+  
+ <script src="{% static 'core/js/script.js' %}"></script>
+
+ <footer>
+    <div class="redes"></div>
+    <h3 class="derechos">Grupo 8 - Comisión 23515 - Codo a Codo 2023</h3>
+  </footer>
+</body>
+</html>

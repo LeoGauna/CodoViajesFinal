@@ -1,0 +1,314 @@
+:root {
+    --color-1: #F8F0E5;
+    --color-2: #EADBC8;
+    --color-3: #DAC0A3;
+    --color-3-5: #dac0a385;
+    --color-4: #102C57;
+}
+  
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Open Sans', sans-serif;
+}
+html{
+    font-size: 16px;
+    overflow-x: hidden;
+}
+  
+/* GENERALES */
+    
+.article{
+    width: 99vw;
+    display: flex;
+    flex-direction: column;
+}
+
+body{
+    background-color: var(--color-1);
+}
+
+#h2_itinerario_europa{
+    text-align: center;
+    background-color: var(--color-4);
+    border: 1px solid var(--color-4);
+    padding: 4px;
+    color: var(--color-1);
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+
+#h1_europa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('../img/europanoramic.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+  }
+
+  #h1_europa > h1{
+    font-size: 4rem;
+    text-align: center;
+    color: var(--color-1);
+    background-color: var(--color-4);
+    width: 100vw;
+    height: fit-content;
+  }
+  
+
+/* LONDRES */
+
+#londres_container{
+    display: flex;
+    height: 30vh;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid var(--color-4);
+    margin-bottom: 2vh;
+}
+
+#londres_img_container{
+    min-width: 50%;
+    height: 100%;
+    display: flex;
+    background: url('../img/europa/londres.png') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#londres_img_container > h2{
+    font-size: 3vw;
+    color: var(--color-4);
+    background-color: var(--color-3-5);
+    padding: 1vw;
+    border: solid 1px var(--color-4);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all .3s ease .03s;
+    -webkit-transition: all .3s ease .03s;
+    -moz-transition: all .3s ease .03s;
+    -ms-transition: all .3s ease .03s;
+    -o-transition: all .3s ease .03s;
+    cursor: pointer;
+}
+
+#londres_img_container > h2:hover{
+    background-color: var(--color-3);
+    padding: 2rem;
+}
+
+#londres_txt_container{
+    display: flex;
+    color: var(--color-4);
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1vw;
+}
+
+/* PARIS */
+
+#paris_container{
+    display: flex;
+    height: 30vh;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid var(--color-4);
+    margin-bottom: 2vh;
+    background-color: var(--color-3-5);
+
+}
+
+#paris_img_container{
+    min-width: 50%;
+    height: 100%;
+    display: flex;
+    background: url('../img/europa/paris.jpeg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#paris_img_container > h2{
+    font-size: 3vw;
+    color: var(--color-4);
+    background-color: var(--color-3-5);
+    padding: 1vw;
+    border: solid 1px var(--color-4);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all .3s ease .03s;
+    -webkit-transition: all .3s ease .03s;
+    -moz-transition: all .3s ease .03s;
+    -ms-transition: all .3s ease .03s;
+    -o-transition: all .3s ease .03s;
+    cursor: pointer;
+}
+
+#paris_img_container > h2:hover{
+    background-color: var(--color-3);
+    padding: 2rem;
+}
+
+#paris_txt_container{
+    display: flex;
+    color: var(--color-4);
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1vw;
+}
+
+/* BRUSELAS - AMSTERDAM */
+
+#bru_ams_container{
+    display: flex;
+    height: 30vh;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid var(--color-4);
+    margin-bottom: 2vh;
+}
+
+#bru_ams_img_container{
+    min-width: 50%;
+    height: 100%;
+    display: flex;
+    background: url('../img/europa/amsterdam.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#bru_ams_img_container > h2{
+    font-size: 3vw;
+    color: var(--color-4);
+    background-color: var(--color-3-5);
+    padding: 1vw;
+    border: solid 1px var(--color-4);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all .3s ease .03s;
+    -webkit-transition: all .3s ease .03s;
+    -moz-transition: all .3s ease .03s;
+    -ms-transition: all .3s ease .03s;
+    -o-transition: all .3s ease .03s;
+    cursor: pointer;
+}
+
+#bru_ams_img_container > h2:hover{
+    background-color: var(--color-3);
+    padding: 2rem;
+}
+
+#bru_ams_txt_container{
+    display: flex;
+    color: var(--color-4);
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1vw;
+}
+
+/* BERLIN - PRAGA - BUDAPEST */
+
+#ber_pra_buda_container{
+    display: flex;
+    height: 30vh;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid var(--color-4);
+    margin-bottom: 2vh;
+    background-color: var(--color-3-5);
+}
+
+#ber_pra_buda_img_container{
+    min-width: 50%;
+    height: 100%;
+    display: flex;
+    background: url('../img/europa/berlin.jpg') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+#ber_pra_buda_img_container>h2{
+    font-size: 3vw;
+    color: var(--color-4);
+    background-color: var(--color-3-5);
+    padding: 1vw;
+    border: solid 1px var(--color-4);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: all .3s ease .03s;
+    -webkit-transition: all .3s ease .03s;
+    -moz-transition: all .3s ease .03s;
+    -ms-transition: all .3s ease .03s;
+    -o-transition: all .3s ease .03s;
+    cursor: pointer;
+}
+
+#ber_pra_buda_img_container > h2:hover{
+    background-color: var(--color-3);
+    padding: 2rem;
+}
+
+#ber_pra_buda_txt_container{
+    display: flex;
+    color: var(--color-4);
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1vw;
+}
+
+/* MAPA */
+
+#map_europa{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-4);
+    padding: 0 2vw 2vw;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid var(--color-1); */
+}
+
+#h2_mapa{
+    padding: 2vw;
+    color: var(--color-1);
+
+}
+
+#footer_europa{
+    margin-top: 0;
+}
