@@ -1,7 +1,17 @@
 {% extends "core/base.html" %}
 
 {% block content %}
-{% for disney in disneys %}
+    <main id="main_index">
+      <article id="h1_disney">
+        <h1>Visita Disney</h1>
+      </article>
+      <h2 id="h2_parques"> Disfruta de los maravillos parques de Disney World Orlando</h2>
+  
+      <!-- INICIO DE PARQUE -->
+  
+      <article class="article" id="article_disney">
+  
+  {% for disney in disneys %}
 <div class="banner-promo">
   <div class="img-banner-promo">
       <img src="{{disney.imagen.url}}" alt="">
@@ -13,17 +23,7 @@
 </div>
 
 {% endfor %}
-    <main id="main_index">
-      <article id="h1_disney">
-        <h1>Visita Disney</h1>
-      </article>
-      <h2 id="h2_parques"> Disfruta de los maravillos parques de Disney World Orlando</h2>
-  
-      <!-- INICIO DE PARQUE -->
-  
-      <article class="article" id="article_disney">
-  
-  
+
         <!-- PARQUE GENERAl -->
   
         <div id="paquete_container">

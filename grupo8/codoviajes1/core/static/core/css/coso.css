@@ -1,0 +1,33 @@
+.banner-promo{
+    display: flex;
+    height: 25vh;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--color-4);
+    margin-bottom: 1vh;
+}
+
+.img-banner-promo{
+    margin: 0 2vw;
+    min-width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border: 1px solid var(--color-4);
+    height: 21vw;
+    width: 48vw;
+}
+
+.img-banner-promo > img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.contenido-banner-promo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: start;
+
+}
